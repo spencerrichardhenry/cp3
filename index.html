@@ -65,28 +65,26 @@
                   <th>Phone</th>
                   <th>E-mail</th>
                 </tr>
-                <div v-for="advisor in advisorsSearched">
-                  <tr v-for="advisor in advisorsSearched">
-                    <td> {{advisor.name}}
-                    </td>
-                    <td>
-                      {{advisor.specialty}}
-                    </td>
-                    <td>
-                      {{advisor.phone}}
-                    </td>
-                    <td>
-                      {{advisor.email}}
-                    </td>
-                  </tr>
-                </div>
-
-              </table>
+                <tr v-for="advisor in advisorsSearched">
+                  <td> {{advisor.name}}
+                  </td>
+                  <td>
+                    {{advisor.specialty}}
+                  </td>
+                  <td>
+                    {{advisor.phone}}
+                  </td>
+                  <td>
+                    {{advisor.email}}
+                  </td>
             </div>
+
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <div class="container" id="intro">

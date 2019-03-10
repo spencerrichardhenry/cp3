@@ -43,11 +43,16 @@ let app = new Vue({
       }
       this.noAdvisors = false;
       this.noAdvisorMessage = "There don't seem to be any advisors in that city!";
+      let cityMatch = false;
       for (let i = 0; i < this.numAdvisors; ++i) {
         if (this.advisors[i].city === this.aSearchInput) {
           this.advisorsSearched[i] = (this.advisors[i]);
           console.log("advisor successfully pushed to advisorsSearched[]");
+          cityMatch = true;
         }
+      }
+      if (cityMatch === false) {
+        this.noAdvisors = true;
       }
       return;
     }
